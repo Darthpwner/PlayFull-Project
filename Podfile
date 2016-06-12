@@ -1,3 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '7.0'
-pod 'AFNetworking', '~> 2.5'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'PlayFull Project' do
+    pod 'Alamofire', '~> 3.4'
+end
