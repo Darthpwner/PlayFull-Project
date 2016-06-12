@@ -11,39 +11,57 @@ import Alamofire
 
 class ViewController: UIViewController {
     @IBAction func getButton(sender: AnyObject) {
-        print("GET")
-    }
-    
-    @IBAction func postButton(sender: AnyObject) {
-        print("POST")
-    }
-    
-    
-    @IBAction func deleteButton(sender: AnyObject) {
-        print("DELETE")
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-//        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
-//            .validate(statusCode: 200..<300)
-//            .validate(contentType: ["application/json"])
-//            .response { response in
-//                print("\(response)")
-//        }
+        print("GET TEST")
         
         Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
             .validate()
             .responseJSON { response in
                 switch response.result {
                 case .Success:
-                    print("Validation Successful")
+                    print("Validation Successful for GET")
                 case .Failure(let error):
                     print(error)
                 }
         }
+    }
+    
+    @IBAction func postButton(sender: AnyObject) {
+        print("POST TEST")
+        
+        let parameters = [
+            "foo": "bar",
+            "baz": ["a", 1],
+            "qux": [
+                "x": 1,
+                "y": 2,
+                "z": 3
+            ]
+        ]
+        
+        Alamofire.request(.POST, "https://httpbin.org/post", parameters: parameters)
+            .validate()
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    print("Validation Successful for POST");
+                case .Failure(let error):
+                    print(error)
+                }
+        }
+        // HTTP body: foo=bar&baz[]=a&baz[]=1&qux[x]=1&qux[y]=2&qux[z]=3
+    }
+    
+    
+    @IBAction func deleteButton(sender: AnyObject) {
+        print("DELETE TEST")
+        
+        Alamofire.request(.DELETE, "https://httpbin.org/delete")
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
