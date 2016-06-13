@@ -56,6 +56,15 @@ class ViewController: UIViewController {
         print("DELETE TEST")
         
         Alamofire.request(.DELETE, "https://httpbin.org/delete")
+            .validate()
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    print("Validation Successful for DELETE");
+                case .Failure(let error):
+                    print(error)
+                }
+        }
     }
 
     override func viewDidLoad() {
