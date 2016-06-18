@@ -10,18 +10,27 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var resource: UITextField!
+    
+    @IBOutlet var item: UITextField!
+    
     @IBAction func getButton(sender: AnyObject) {
         print("GET TEST")
         
-        Alamofire.request(.GET, "http://jsonplaceholder.typicode.com/", parameters: ["foo": "bar"])
-            .validate()
+        Alamofire.request(.GET, "http://jsonplaceholder.typicode.com/" + resource.text! + "/" + item.text!)
             .responseJSON { response in
-                switch response.result {
-                case .Success:
-                    print("Validation Successful for GET")
-                case .Failure(let error):
-                    print(error)
+                
+                
+                if let JSON = response.result.value {
+                    print("JSON: \(JSON)")
                 }
+                
+                else {
+                    print("GET request failure")
+                }
+                
+                print("\n")
         }
     }
     

@@ -17,40 +17,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70q-Dp-P17">
-                                <rect key="frame" x="165" y="285" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70q-Dp-P17">
+                                <rect key="frame" x="110" y="285" width="30" height="30"/>
                                 <state key="normal" title="GET"/>
                                 <connections>
                                     <action selector="getButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qEc-7C-Wtc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aW-Yi-iTR">
-                                <rect key="frame" x="293" y="285" width="40" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aW-Yi-iTR">
+                                <rect key="frame" x="280" y="285" width="40" height="30"/>
                                 <state key="normal" title="POST"/>
                                 <connections>
                                     <action selector="postButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLq-M7-4VV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Z-ZF-B5y">
-                                <rect key="frame" x="454" y="285" width="55" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Z-ZF-B5y">
+                                <rect key="frame" x="426" y="285" width="55" height="30"/>
                                 <state key="normal" title="DELETE"/>
                                 <connections>
                                     <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5H-xi-5DG"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-mh-OIj">
+                                <rect key="frame" x="150.5" y="226.5" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resources" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="por-yH-4oq">
+                                <rect key="frame" x="150" y="151" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="11K-yl-ixs"/>
+                            <constraint firstItem="xLd-mh-OIj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="5:10" id="67F-zK-Xqs"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="leading" secondItem="70q-Dp-P17" secondAttribute="trailing" id="Cs9-F6-XhS"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="leading" secondItem="3aW-Yi-iTR" secondAttribute="trailing" constant="121" id="E89-Aw-kqv"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="leading" secondItem="3aW-Yi-iTR" secondAttribute="trailing" multiplier="10:7.5" id="F6J-dz-Yte"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="leading" secondItem="70q-Dp-P17" secondAttribute="trailing" multiplier="10:5" id="SEg-tN-d9K"/>
+                            <constraint firstItem="xLd-mh-OIj" firstAttribute="top" secondItem="por-yH-4oq" secondAttribute="bottom" multiplier="10:8" id="Uzm-AN-unE"/>
+                            <constraint firstItem="3aW-Yi-iTR" firstAttribute="top" secondItem="xLd-mh-OIj" secondAttribute="bottom" multiplier="10:9" id="YPb-Bb-gDa"/>
                             <constraint firstItem="70q-Dp-P17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="agv-fp-TMP"/>
+                            <constraint firstItem="por-yH-4oq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e3E-J0-f6j"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fyq-um-hop"/>
+                            <constraint firstItem="por-yH-4oq" firstAttribute="width" secondItem="xLd-mh-OIj" secondAttribute="width" id="iJu-bk-idi"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mQK-gn-vZn"/>
                             <constraint firstItem="70q-Dp-P17" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="onr-gh-ZHY"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q7u-Ur-Gpo"/>
+                            <constraint firstItem="xLd-mh-OIj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wto-kW-fck"/>
                             <constraint firstItem="70q-Dp-P17" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xLN-Vv-kAR"/>
                         </constraints>
                         <variation key="default">
@@ -63,6 +79,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="item" destination="xLd-mh-OIj" id="vkO-Y4-v0W"/>
+                        <outlet property="resource" destination="por-yH-4oq" id="Kiv-fQ-AND"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
