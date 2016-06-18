@@ -72,12 +72,20 @@
                                     <action selector="patchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mRN-hJ-Msv"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="http://jsonplaceholder.typicode.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZFx-xR-LB9" userLabel="URL">
+                                <rect key="frame" x="0.0" y="420" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="top" secondItem="xQQ-FN-JGC" secondAttribute="bottom" multiplier="10:8.5" id="0g0-Yo-Evy"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="11K-yl-ixs"/>
                             <constraint firstItem="xLd-mh-OIj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="5:10" id="67F-zK-Xqs"/>
+                            <constraint firstItem="ZFx-xR-LB9" firstAttribute="top" secondItem="cgS-qC-xyb" secondAttribute="bottom" multiplier="10:7.5" id="7Io-Y4-Ald"/>
                             <constraint firstItem="xQQ-FN-JGC" firstAttribute="width" secondItem="UmM-23-dfo" secondAttribute="width" id="7i6-kG-cWg"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="leading" secondItem="70q-Dp-P17" secondAttribute="trailing" id="Cs9-F6-XhS"/>
                             <constraint firstItem="xQQ-FN-JGC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DjR-y2-aEk"/>
@@ -86,6 +94,8 @@
                             <constraint firstItem="cgS-qC-xyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fdb-ZJ-j1h"/>
                             <constraint firstItem="UTV-Lh-sgJ" firstAttribute="leading" secondItem="cgS-qC-xyb" secondAttribute="trailing" multiplier="10:9" id="LH1-8d-POu"/>
                             <constraint firstItem="xLd-mh-OIj" firstAttribute="top" secondItem="por-yH-4oq" secondAttribute="bottom" multiplier="10:7.5" id="MxA-BS-wrO"/>
+                            <constraint firstItem="ZFx-xR-LB9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="NOh-78-qfA"/>
+                            <constraint firstItem="ZFx-xR-LB9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="OTa-ho-ay2"/>
                             <constraint firstItem="xQQ-FN-JGC" firstAttribute="top" secondItem="UmM-23-dfo" secondAttribute="bottom" multiplier="10:9" id="P4o-bS-vY8"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="leading" secondItem="UTV-Lh-sgJ" secondAttribute="trailing" multiplier="10:9.5" id="Pj8-cs-jPJ"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="leading" secondItem="70q-Dp-P17" secondAttribute="trailing" multiplier="10:6.5" id="SEg-tN-d9K"/>
@@ -96,6 +106,7 @@
                             <constraint firstItem="UmM-23-dfo" firstAttribute="top" secondItem="xLd-mh-OIj" secondAttribute="bottom" multiplier="10:8.5" id="dt8-qe-zkI"/>
                             <constraint firstItem="por-yH-4oq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e3E-J0-f6j"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fyq-um-hop"/>
+                            <constraint firstItem="ZFx-xR-LB9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="glp-Qf-KnK"/>
                             <constraint firstItem="por-yH-4oq" firstAttribute="width" secondItem="xLd-mh-OIj" secondAttribute="width" id="iJu-bk-idi"/>
                             <constraint firstItem="cgS-qC-xyb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jU1-w7-Zan"/>
                             <constraint firstItem="UmM-23-dfo" firstAttribute="width" secondItem="xLd-mh-OIj" secondAttribute="width" id="kqC-MP-6mY"/>
