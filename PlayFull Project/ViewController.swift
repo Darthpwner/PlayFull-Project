@@ -48,6 +48,17 @@ class ViewController: UIViewController {
         httpRequest(Alamofire.Method.POST)
     }
     
+    @IBAction func putButton(sender: AnyObject) {
+        print("PUT TEST")
+        
+        httpRequest(Alamofire.Method.PUT)
+    }
+    
+    @IBAction func patchButton(sender: AnyObject) {
+        print("PATCH TEST")
+        
+        httpRequest(Alamofire.Method.PATCH)
+    }
     
     @IBAction func deleteButton(sender: AnyObject) {
         print("DELETE TEST")

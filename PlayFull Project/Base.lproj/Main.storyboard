@@ -18,21 +18,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70q-Dp-P17">
-                                <rect key="frame" x="110" y="285" width="30" height="30"/>
+                                <rect key="frame" x="92" y="285" width="30" height="30"/>
                                 <state key="normal" title="GET"/>
                                 <connections>
                                     <action selector="getButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qEc-7C-Wtc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aW-Yi-iTR">
-                                <rect key="frame" x="280" y="285" width="40" height="30"/>
+                                <rect key="frame" x="188" y="285" width="40" height="30"/>
                                 <state key="normal" title="POST"/>
                                 <connections>
                                     <action selector="postButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLq-M7-4VV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Z-ZF-B5y">
-                                <rect key="frame" x="426" y="285" width="55" height="30"/>
+                                <rect key="frame" x="419" y="285" width="55" height="30"/>
                                 <state key="normal" title="DELETE"/>
                                 <connections>
                                     <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5H-xi-5DG"/>
@@ -58,6 +58,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgS-qC-xyb">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="PUT"/>
+                                <connections>
+                                    <action selector="putButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JO7-im-8du"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTV-Lh-sgJ">
+                                <rect key="frame" x="350" y="285" width="48" height="30"/>
+                                <state key="normal" title="PATCH"/>
+                                <connections>
+                                    <action selector="patchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mRN-hJ-Msv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -69,20 +83,26 @@
                             <constraint firstItem="xQQ-FN-JGC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DjR-y2-aEk"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="leading" secondItem="3aW-Yi-iTR" secondAttribute="trailing" constant="121" id="E89-Aw-kqv"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="leading" secondItem="3aW-Yi-iTR" secondAttribute="trailing" multiplier="10:7.5" id="F6J-dz-Yte"/>
+                            <constraint firstItem="cgS-qC-xyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fdb-ZJ-j1h"/>
+                            <constraint firstItem="UTV-Lh-sgJ" firstAttribute="leading" secondItem="cgS-qC-xyb" secondAttribute="trailing" multiplier="10:9" id="LH1-8d-POu"/>
                             <constraint firstItem="xLd-mh-OIj" firstAttribute="top" secondItem="por-yH-4oq" secondAttribute="bottom" multiplier="10:7.5" id="MxA-BS-wrO"/>
                             <constraint firstItem="xQQ-FN-JGC" firstAttribute="top" secondItem="UmM-23-dfo" secondAttribute="bottom" multiplier="10:9" id="P4o-bS-vY8"/>
-                            <constraint firstItem="3aW-Yi-iTR" firstAttribute="leading" secondItem="70q-Dp-P17" secondAttribute="trailing" multiplier="10:5" id="SEg-tN-d9K"/>
+                            <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="leading" secondItem="UTV-Lh-sgJ" secondAttribute="trailing" multiplier="10:9.5" id="Pj8-cs-jPJ"/>
+                            <constraint firstItem="3aW-Yi-iTR" firstAttribute="leading" secondItem="70q-Dp-P17" secondAttribute="trailing" multiplier="10:6.5" id="SEg-tN-d9K"/>
                             <constraint firstItem="xLd-mh-OIj" firstAttribute="top" secondItem="por-yH-4oq" secondAttribute="bottom" multiplier="10:8" id="Uzm-AN-unE"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="top" secondItem="xLd-mh-OIj" secondAttribute="bottom" multiplier="10:9" id="YPb-Bb-gDa"/>
                             <constraint firstItem="70q-Dp-P17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="agv-fp-TMP"/>
+                            <constraint firstItem="UTV-Lh-sgJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ddx-gm-GHc"/>
                             <constraint firstItem="UmM-23-dfo" firstAttribute="top" secondItem="xLd-mh-OIj" secondAttribute="bottom" multiplier="10:8.5" id="dt8-qe-zkI"/>
                             <constraint firstItem="por-yH-4oq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e3E-J0-f6j"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fyq-um-hop"/>
                             <constraint firstItem="por-yH-4oq" firstAttribute="width" secondItem="xLd-mh-OIj" secondAttribute="width" id="iJu-bk-idi"/>
+                            <constraint firstItem="cgS-qC-xyb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jU1-w7-Zan"/>
                             <constraint firstItem="UmM-23-dfo" firstAttribute="width" secondItem="xLd-mh-OIj" secondAttribute="width" id="kqC-MP-6mY"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mQK-gn-vZn"/>
                             <constraint firstItem="70q-Dp-P17" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="onr-gh-ZHY"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q7u-Ur-Gpo"/>
+                            <constraint firstItem="cgS-qC-xyb" firstAttribute="leading" secondItem="3aW-Yi-iTR" secondAttribute="trailing" multiplier="10:8" id="rpB-re-Nfd"/>
                             <constraint firstItem="UmM-23-dfo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uj7-Im-apr"/>
                             <constraint firstItem="xLd-mh-OIj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wto-kW-fck"/>
                             <constraint firstItem="70q-Dp-P17" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xLN-Vv-kAR"/>
@@ -94,8 +114,10 @@
                                 <exclude reference="xLN-Vv-kAR"/>
                                 <exclude reference="Cs9-F6-XhS"/>
                                 <exclude reference="YPb-Bb-gDa"/>
+                                <exclude reference="fyq-um-hop"/>
                                 <exclude reference="11K-yl-ixs"/>
                                 <exclude reference="E89-Aw-kqv"/>
+                                <exclude reference="F6J-dz-Yte"/>
                             </mask>
                         </variation>
                     </view>
