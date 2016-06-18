@@ -15,10 +15,14 @@ class ViewController: UIViewController {
     
     @IBOutlet var item: UITextField!
     
+    @IBOutlet var parameter: UITextField!
+    
+    @IBOutlet var parameterValue: UITextField!
+    
     @IBAction func getButton(sender: AnyObject) {
         print("GET TEST")
         
-        Alamofire.request(.GET, "http://jsonplaceholder.typicode.com/" + resource.text! + "/" + item.text!)
+        Alamofire.request(.GET, "http://jsonplaceholder.typicode.com/" + resource.text! + "/" + item.text!, parameters: [parameter.text!: parameterValue.text!])
             .responseJSON { response in
                 
                 

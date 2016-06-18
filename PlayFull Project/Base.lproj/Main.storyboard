@@ -38,42 +38,62 @@
                                     <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5H-xi-5DG"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-mh-OIj">
-                                <rect key="frame" x="150.5" y="226.5" width="300" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resources" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="por-yH-4oq">
+                                <rect key="frame" x="150" y="50" width="300" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resources" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="por-yH-4oq">
-                                <rect key="frame" x="150" y="151" width="300" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-mh-OIj">
+                                <rect key="frame" x="150" y="107" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parameter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UmM-23-dfo">
+                                <rect key="frame" x="150" y="161" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parameter Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xQQ-FN-JGC">
+                                <rect key="frame" x="150" y="212" width="300" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3aW-Yi-iTR" firstAttribute="top" secondItem="xQQ-FN-JGC" secondAttribute="bottom" multiplier="10:8.5" id="0g0-Yo-Evy"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="11K-yl-ixs"/>
                             <constraint firstItem="xLd-mh-OIj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="5:10" id="67F-zK-Xqs"/>
+                            <constraint firstItem="xQQ-FN-JGC" firstAttribute="width" secondItem="UmM-23-dfo" secondAttribute="width" id="7i6-kG-cWg"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="leading" secondItem="70q-Dp-P17" secondAttribute="trailing" id="Cs9-F6-XhS"/>
+                            <constraint firstItem="xQQ-FN-JGC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DjR-y2-aEk"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="leading" secondItem="3aW-Yi-iTR" secondAttribute="trailing" constant="121" id="E89-Aw-kqv"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="leading" secondItem="3aW-Yi-iTR" secondAttribute="trailing" multiplier="10:7.5" id="F6J-dz-Yte"/>
+                            <constraint firstItem="xLd-mh-OIj" firstAttribute="top" secondItem="por-yH-4oq" secondAttribute="bottom" multiplier="10:7.5" id="MxA-BS-wrO"/>
+                            <constraint firstItem="xQQ-FN-JGC" firstAttribute="top" secondItem="UmM-23-dfo" secondAttribute="bottom" multiplier="10:9" id="P4o-bS-vY8"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="leading" secondItem="70q-Dp-P17" secondAttribute="trailing" multiplier="10:5" id="SEg-tN-d9K"/>
                             <constraint firstItem="xLd-mh-OIj" firstAttribute="top" secondItem="por-yH-4oq" secondAttribute="bottom" multiplier="10:8" id="Uzm-AN-unE"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="top" secondItem="xLd-mh-OIj" secondAttribute="bottom" multiplier="10:9" id="YPb-Bb-gDa"/>
                             <constraint firstItem="70q-Dp-P17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="agv-fp-TMP"/>
+                            <constraint firstItem="UmM-23-dfo" firstAttribute="top" secondItem="xLd-mh-OIj" secondAttribute="bottom" multiplier="10:8.5" id="dt8-qe-zkI"/>
                             <constraint firstItem="por-yH-4oq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e3E-J0-f6j"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fyq-um-hop"/>
                             <constraint firstItem="por-yH-4oq" firstAttribute="width" secondItem="xLd-mh-OIj" secondAttribute="width" id="iJu-bk-idi"/>
+                            <constraint firstItem="UmM-23-dfo" firstAttribute="width" secondItem="xLd-mh-OIj" secondAttribute="width" id="kqC-MP-6mY"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mQK-gn-vZn"/>
                             <constraint firstItem="70q-Dp-P17" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="onr-gh-ZHY"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q7u-Ur-Gpo"/>
+                            <constraint firstItem="UmM-23-dfo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uj7-Im-apr"/>
                             <constraint firstItem="xLd-mh-OIj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wto-kW-fck"/>
                             <constraint firstItem="70q-Dp-P17" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xLN-Vv-kAR"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Uzm-AN-unE"/>
                                 <exclude reference="agv-fp-TMP"/>
                                 <exclude reference="xLN-Vv-kAR"/>
                                 <exclude reference="Cs9-F6-XhS"/>
+                                <exclude reference="YPb-Bb-gDa"/>
                                 <exclude reference="11K-yl-ixs"/>
                                 <exclude reference="E89-Aw-kqv"/>
                             </mask>
@@ -81,6 +101,8 @@
                     </view>
                     <connections>
                         <outlet property="item" destination="xLd-mh-OIj" id="vkO-Y4-v0W"/>
+                        <outlet property="parameter" destination="UmM-23-dfo" id="20K-ty-rcd"/>
+                        <outlet property="parameterValue" destination="xQQ-FN-JGC" id="0R3-aA-Kz3"/>
                         <outlet property="resource" destination="por-yH-4oq" id="Kiv-fQ-AND"/>
                     </connections>
                 </viewController>
