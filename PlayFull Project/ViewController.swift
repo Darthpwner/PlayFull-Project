@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBAction func getButton(sender: AnyObject) {
         print("GET TEST")
         
-        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
+        Alamofire.request(.GET, "https://jsonplaceholder.typicode.com/", parameters: ["foo": "bar"])
             .validate()
             .responseJSON { response in
                 switch response.result {
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             ]
         ]
         
-        Alamofire.request(.POST, "https://httpbin.org/post", parameters: parameters)
+        Alamofire.request(.POST, "https://jsonplaceholder.typicode.com/", parameters: parameters)
             .validate()
             .responseJSON { response in
                 switch response.result {
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     @IBAction func deleteButton(sender: AnyObject) {
         print("DELETE TEST")
         
-        Alamofire.request(.DELETE, "https://httpbin.org/delete")
+        Alamofire.request(.DELETE, "https://jsonplaceholder.typicode.com/")
             .validate()
             .responseJSON { response in
                 switch response.result {
