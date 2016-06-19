@@ -31,33 +31,6 @@
                                     <action selector="postButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLq-M7-4VV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Z-ZF-B5y">
-                                <rect key="frame" x="419" y="285" width="55" height="30"/>
-                                <state key="normal" title="DELETE"/>
-                                <connections>
-                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5H-xi-5DG"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resources" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="por-yH-4oq">
-                                <rect key="frame" x="150" y="50" width="300" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-mh-OIj">
-                                <rect key="frame" x="150" y="107" width="300" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parameter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UmM-23-dfo">
-                                <rect key="frame" x="150" y="161" width="300" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parameter Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xQQ-FN-JGC">
-                                <rect key="frame" x="150" y="212" width="300" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgS-qC-xyb">
                                 <rect key="frame" x="285" y="285" width="30" height="30"/>
                                 <state key="normal" title="PUT"/>
@@ -72,6 +45,28 @@
                                     <action selector="patchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mRN-hJ-Msv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Z-ZF-B5y">
+                                <rect key="frame" x="419" y="285" width="55" height="30"/>
+                                <state key="normal" title="DELETE"/>
+                                <connections>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5H-xi-5DG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resources + Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-mh-OIj">
+                                <rect key="frame" x="150" y="107" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parameter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UmM-23-dfo">
+                                <rect key="frame" x="150" y="161" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parameter Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xQQ-FN-JGC">
+                                <rect key="frame" x="150" y="212" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="http://jsonplaceholder.typicode.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZFx-xR-LB9" userLabel="URL">
                                 <rect key="frame" x="0.0" y="420" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,21 +88,17 @@
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="leading" secondItem="3aW-Yi-iTR" secondAttribute="trailing" multiplier="10:7.5" id="F6J-dz-Yte"/>
                             <constraint firstItem="cgS-qC-xyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fdb-ZJ-j1h"/>
                             <constraint firstItem="UTV-Lh-sgJ" firstAttribute="leading" secondItem="cgS-qC-xyb" secondAttribute="trailing" multiplier="10:9" id="LH1-8d-POu"/>
-                            <constraint firstItem="xLd-mh-OIj" firstAttribute="top" secondItem="por-yH-4oq" secondAttribute="bottom" multiplier="10:7.5" id="MxA-BS-wrO"/>
                             <constraint firstItem="ZFx-xR-LB9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="NOh-78-qfA"/>
                             <constraint firstItem="ZFx-xR-LB9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="OTa-ho-ay2"/>
                             <constraint firstItem="xQQ-FN-JGC" firstAttribute="top" secondItem="UmM-23-dfo" secondAttribute="bottom" multiplier="10:9" id="P4o-bS-vY8"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="leading" secondItem="UTV-Lh-sgJ" secondAttribute="trailing" multiplier="10:9.5" id="Pj8-cs-jPJ"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="leading" secondItem="70q-Dp-P17" secondAttribute="trailing" multiplier="10:6.5" id="SEg-tN-d9K"/>
-                            <constraint firstItem="xLd-mh-OIj" firstAttribute="top" secondItem="por-yH-4oq" secondAttribute="bottom" multiplier="10:8" id="Uzm-AN-unE"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="top" secondItem="xLd-mh-OIj" secondAttribute="bottom" multiplier="10:9" id="YPb-Bb-gDa"/>
                             <constraint firstItem="70q-Dp-P17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="agv-fp-TMP"/>
                             <constraint firstItem="UTV-Lh-sgJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ddx-gm-GHc"/>
                             <constraint firstItem="UmM-23-dfo" firstAttribute="top" secondItem="xLd-mh-OIj" secondAttribute="bottom" multiplier="10:8.5" id="dt8-qe-zkI"/>
-                            <constraint firstItem="por-yH-4oq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e3E-J0-f6j"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fyq-um-hop"/>
                             <constraint firstItem="ZFx-xR-LB9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="glp-Qf-KnK"/>
-                            <constraint firstItem="por-yH-4oq" firstAttribute="width" secondItem="xLd-mh-OIj" secondAttribute="width" id="iJu-bk-idi"/>
                             <constraint firstItem="cgS-qC-xyb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jU1-w7-Zan"/>
                             <constraint firstItem="UmM-23-dfo" firstAttribute="width" secondItem="xLd-mh-OIj" secondAttribute="width" id="kqC-MP-6mY"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mQK-gn-vZn"/>
@@ -120,7 +111,6 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Uzm-AN-unE"/>
                                 <exclude reference="agv-fp-TMP"/>
                                 <exclude reference="xLN-Vv-kAR"/>
                                 <exclude reference="Cs9-F6-XhS"/>
@@ -133,10 +123,9 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="item" destination="xLd-mh-OIj" id="vkO-Y4-v0W"/>
                         <outlet property="parameter" destination="UmM-23-dfo" id="20K-ty-rcd"/>
                         <outlet property="parameterValue" destination="xQQ-FN-JGC" id="0R3-aA-Kz3"/>
-                        <outlet property="resource" destination="por-yH-4oq" id="Kiv-fQ-AND"/>
+                        <outlet property="resourcesPlusItem" destination="xLd-mh-OIj" id="k4U-lU-Dcy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

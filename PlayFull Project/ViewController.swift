@@ -10,17 +10,14 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
-    
-    @IBOutlet var resource: UITextField!
-    
-    @IBOutlet var item: UITextField!
+    @IBOutlet var resourcesPlusItem: UITextField!
     
     @IBOutlet var parameter: UITextField!
     
     @IBOutlet var parameterValue: UITextField!
     
     func httpRequest(request: Alamofire.Method) {
-        Alamofire.request(request, "http://jsonplaceholder.typicode.com/" + resource.text! + "/" + item.text!, parameters: [parameter.text!: parameterValue.text!])
+        Alamofire.request(request, "http://jsonplaceholder.typicode.com/" + resourcesPlusItem.text!, parameters: [parameter.text!: parameterValue.text!])
             .responseJSON { response in
                 print(response.request)  // original URL request
                 
