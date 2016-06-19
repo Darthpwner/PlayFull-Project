@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     func httpRequest(request: Alamofire.Method) {
         Alamofire.request(request, "http://jsonplaceholder.typicode.com/" + resource.text! + "/" + item.text!, parameters: [parameter.text!: parameterValue.text!])
             .responseJSON { response in
-                
+                print(response.request)  // original URL request
                 
                 if let JSON = response.result.value {
                     print("JSON: \(JSON)")
