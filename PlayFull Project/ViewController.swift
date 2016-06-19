@@ -16,8 +16,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var parameterValue: UITextField!
     
-    @IBOutlet var jsonScrollView: UIScrollView!
-    
     func httpRequest(request: Alamofire.Method) {
         Alamofire.request(request, "http://jsonplaceholder.typicode.com/" + resourcesPlusItem.text!, parameters: [parameter.text!: parameterValue.text!])
             .responseJSON { response in
@@ -25,7 +23,6 @@ class ViewController: UIViewController {
                 
                 if let JSON = response.result.value {
                     print("JSON: \(JSON)")
-                    jsonScrollView.
                 }
                     
                 else {
