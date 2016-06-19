@@ -68,7 +68,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="http://jsonplaceholder.typicode.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZFx-xR-LB9" userLabel="URL">
-                                <rect key="frame" x="0.0" y="420" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="525" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -80,7 +80,7 @@
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="top" secondItem="xQQ-FN-JGC" secondAttribute="bottom" multiplier="10:8.5" id="0g0-Yo-Evy"/>
                             <constraint firstItem="Z3Z-ZF-B5y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="11K-yl-ixs"/>
                             <constraint firstItem="xLd-mh-OIj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="5:10" id="67F-zK-Xqs"/>
-                            <constraint firstItem="ZFx-xR-LB9" firstAttribute="top" secondItem="cgS-qC-xyb" secondAttribute="bottom" multiplier="10:7.5" id="7Io-Y4-Ald"/>
+                            <constraint firstItem="ZFx-xR-LB9" firstAttribute="top" secondItem="cgS-qC-xyb" secondAttribute="bottom" multiplier="10:6" id="7Io-Y4-Ald"/>
                             <constraint firstItem="xQQ-FN-JGC" firstAttribute="width" secondItem="UmM-23-dfo" secondAttribute="width" id="7i6-kG-cWg"/>
                             <constraint firstItem="3aW-Yi-iTR" firstAttribute="leading" secondItem="70q-Dp-P17" secondAttribute="trailing" id="Cs9-F6-XhS"/>
                             <constraint firstItem="xQQ-FN-JGC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DjR-y2-aEk"/>
