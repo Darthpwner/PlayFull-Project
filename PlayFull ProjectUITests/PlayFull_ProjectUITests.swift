@@ -29,9 +29,47 @@ class PlayFull_ProjectUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func test1() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        app.textFields["Resources + Item"].tap()
+        app.textFields["Resources + Item"].typeText("posts")
+        app.buttons["GET"].tap()
     }
     
+    func test2() {
+        let app = XCUIApplication()
+        app.textFields["Resources + Item"].tap()
+        app.textFields["Resources + Item"].typeText("posts/1")
+        app.buttons["GET"].tap()
+    }
+    
+    func test3() {
+        let app = XCUIApplication()
+        app.textFields["Resources + Item"].tap()
+        app.textFields["Resources + Item"].typeText("posts/1/comments")
+        app.buttons["GET"].tap()
+    }
+    
+    func test4() {
+        
+        let app = XCUIApplication()
+        app.textFields["Resources + Item"].tap()
+        app.textFields["Resources + Item"].typeText("comments")
+        
+        let parameterTextField = app.textFields["Parameter"]
+        parameterTextField.tap()
+        app.textFields["Parameter"].typeText("postId")
+        
+        let parameterValueTextField = app.textFields["Parameter Value"]
+        parameterValueTextField.tap()
+        app.textFields["Parameter Value"].typeText("1")
+        app.buttons["GET"].tap()
+        
+    }
+    
+    func test5() {
+        
+    }
 }
