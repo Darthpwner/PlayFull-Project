@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "29FC86FD9FBF67F1F9350791F63EC5B4"
-               BuildableName = "Pods_PlayFull_Project.framework"
-               BlueprintName = "Pods-PlayFull Project"
+               BlueprintIdentifier = "13B6D80D6BD4C88150E8C6039B3106D9"
+               BuildableName = "Pods_PlayFull_ProjectUITests.framework"
+               BlueprintName = "Pods-PlayFull ProjectUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "29FC86FD9FBF67F1F9350791F63EC5B4"
-            BuildableName = "Pods_PlayFull_Project.framework"
-            BlueprintName = "Pods-PlayFull Project"
+            BlueprintIdentifier = "13B6D80D6BD4C88150E8C6039B3106D9"
+            BuildableName = "Pods_PlayFull_ProjectUITests.framework"
+            BlueprintName = "Pods-PlayFull ProjectUITests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -14,15 +14,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PlayFull ProjectTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PlayFull ProjectUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>313AABA068169EE219EA23C59D23BB6D</key>
+		<key>13B6D80D6BD4C88150E8C6039B3106D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>29FC86FD9FBF67F1F9350791F63EC5B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF59F03C96F99C13770A826D473649A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
